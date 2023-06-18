@@ -1,12 +1,8 @@
-'user strict';
-
 const mysql = require('mysql');
-
-//local mysql db connection
 const mysqlConn = mysql.createConnection({
     host: 'localhost',
-    user: 'raider',
-    password: 'raider_dev',
+    user: 'root',
+    password: 'manish123',
     database: 'inventory_database'
 });
 mysqlConn.connect(function (err) {

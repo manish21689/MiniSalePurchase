@@ -1,29 +1,11 @@
--- phpMyAdmin SQL Dump
--- version 4.9.1
--- https://www.phpmyadmin.net/
---
--- Host: localhost
--- Generation Time: Oct 06, 2020 at 08:35 AM
--- Server version: 10.3.23-MariaDB-0+deb10u1
--- PHP Version: 7.3.19-1~deb10u1
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Database: `inventory_database`
 --
-
--- --------------------------------------------------------
-
 --
 -- Table structure for table `orders`
 --
@@ -54,10 +36,6 @@ INSERT INTO `orders` (`id`, `name`, `category`, `price`, `quantity`, `total`, `d
 (11, 'Milk', 'groceries', 100, 10, 1000, '2020-08-14', '06:34:00');
 
 -- --------------------------------------------------------
-
---
--- Table structure for table `products`
---
 
 CREATE TABLE `products` (
   `id` bigint(20) UNSIGNED NOT NULL,
@@ -216,6 +194,3 @@ ALTER TABLE `users`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
